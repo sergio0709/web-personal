@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+{% block title %}Acerca de{% endblock %}
+{% block background %}{% load static %}{% static 'core/img/analista_1.jpg' %}{% endblock %}
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/sergio.jpg'%}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Sergio Espinosa</h2>   
+        <p>Nacido el 07 de Septiembre de 1997 en la localidad de la Viña provincia de Salta Argentina, Código postal: 4425. Reside en Mariano Moreno 550, La Viña Salta. <br>
+         Licencia de conducir: en vigencia, tipo A1 - B1. Disponibilidad horaria: full time</p>
+        <hr>
+        <h3>EDUCACIÓN</h3>
+        <br>
+        <h5>PRIMARIA COMPLETA </h5>
+        <p>Esc. N° 4080 "Gral. Dionisio de Puch" - La Viña, Salta</p>
+        <br>
+        <h5>SECUNDARIA COMPLETA</h5>
+        <p>Colegio Sec. N° 5042 "Manuel José Castilla", Orientación Ciencias Sociales y Humanística - La Viña, Salta</p>
+        <br>
+        <h5>TERCIARIA COMPLETA</h5>
+        <p>Instituto Superior del Milagro N° 8207 -Recibido en Tecnicatura Superior en Análisis de Sistemas de Computación. - Alvarado 951,Salta.</p>   
+        <br>
+        <h5>OTROS</h5>
+        <p>IITA- Instituto de Innovación y Tecnología Aplicada - Curso de Programación en Python - Buenos Aires 135, Salta.</p>   
+    </div>
+</div>    
+{% endblock %}

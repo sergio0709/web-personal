@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+{% block title %}Contact{% endblock %}
+{% block background %}{% load static %}{% static 'core/img/contact-bg.jpg' %}{% endblock %}
+{% block headers %}
+<h1>Contacto</h1>
+<span class="subheading">Asesoría</span>
+{% endblock %}
+{% block content %}
+<!-- templates/email.html -->
+<h1>Contact Us</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="form-actions">
+      <button type="submit">Send</button>
+    </div>
+</form>
+     
+{% endblock %}
